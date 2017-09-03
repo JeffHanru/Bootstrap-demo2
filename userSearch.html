@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>bootstrap demo project</title>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!--container : define the width-->
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">Demo Admin</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li>
+                <li class="active"><a href="userList.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; User Manage</a></li>
+                <li><a href="contentManage.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp; Content Manage</a></li>
+                <li><a href="tagManage.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp; Tag Manage</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;Front Home</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Personal HomePage</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;Personal Customize</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;Account Center</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;My favourite</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;Log out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="userList.html" class="list-group-item">User Management</a>
+                <a href="userSearch.html" class="list-group-item active">Search</a>
+                <a href="#" data-toggle="modal" data-target="#myModal" class="list-group-item">Add</a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="page-header">
+                <h1>User Management</h1>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="">
+                    <a href="userList.html">User list</a>
+                </li>
+                <li class="active">
+                    <a href="userSearch.html">User Search</a>
+                </li>
+                <li class="">
+                    <a href="" role="button" data-toggle="modal" data-target="#myModal" >Add User</a>
+                </li>
+            </ul>
+            <form action="#" class="form">
+                <div class="alert alert-info" role="alert">
+                    <strong>Reminder: Write down your reminder content here</strong>
+                </div>
+                <div class="form-group">
+                    <label for="name">User Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="please input your username">
+                </div>
+                <div class="form-group">
+                    <label for="uid">UID</label>
+                    <input type="text" id="uid" class="form-control" placeholder="please input your user ID">
+                </div>
+                <div class="form-group">
+                    <label for="ugroup">User Group</label>
+                    <select name="" id="ugroup" class="form-control">
+                        <option value="">new members</option>
+                        <option value="">registered members</option>
+                        <option value="">premium members</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-default">submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="addName">User Name</label>
+                        <input type="text" id="addName" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password</label>
+                        <input type="text" id="pwd" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="conPwd">Confirm Password</label>
+                        <input type="text" id="conPwd" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="userGroup">User Group</label>
+                        <select name="" id="userGroup" class="form-control">
+                            <option>junior member</option>
+                            <option>mid member</option>
+                            <option>senior member</option>
+                            <option>premium member</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md 12">
+                <p>Copyright is here</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

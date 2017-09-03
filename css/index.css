@@ -1,0 +1,92 @@
+body{
+    font-family:'Microsoft YaHei',sans-serif;
+    padding-top:90px;
+}
+
+/*progress bar*/
+.progress{
+    margin-bottom:2px;
+}
+
+/*avatar*/
+
+.wh64{
+    width:64px;
+    height:60px;
+    border-radius:50%;
+}
+
+
+.pub-icon{
+    background: rgb(64,210,177);
+    color: #ffffff;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    margin-right:20px;
+}
+
+.leave{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.navbar-default{
+    background-color: #fff;
+    border:none;
+    box-shadow:0px 2px 8px 0px rgba(50,50,50,0.25);
+}
+
+.navbar-default .navbar-brand{
+    font-size:30px;
+    font-weight:bold;
+    color: #40d2b1;
+    height:70px;
+    line-height:35px;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+    height: 70px;
+    line-height: 35px;
+}
+
+.navbar-toggle{
+    margin-top: 18px;
+}
+
+/*page-header*/
+.page-header{
+    margin-top:0;
+}
+
+.mar_top15{
+    margin-top:15px;
+}
+
+.page-header h1{
+    margin:0;
+    font-size:16px;
+
+}
+
+.form{
+    padding:10px;
+    border:1px solid #dddddd;
+    border-top:none;
+}
+
+.tagList{
+    margin-top:10px;
+    margin-right:10px;
+}
+
+footer{
+    font-weight:400;
+    text-align:center;
+    padding:20px;
+}

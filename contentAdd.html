@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>bootstrap demo project</title>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!--container : define the width-->
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">Demo Admin</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li>
+                <li><a href="userList.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; User Manage</a></li>
+                <li class="active"><a href="contentManage.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp; Content Manage</a></li>
+                <li><a href="tagManage.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp; Tag Manage</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;Front Home</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Personal HomePage</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;Personal Customize</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;Account Center</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;My favourite</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;Log out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="contentManage.html" class="list-group-item">Content Management</a>
+                <a href="contentAdd.html" class="list-group-item active">Add Content</a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="page-header">
+                <h1>User Management</h1>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="">
+                    <a href="contentManage.html">Content Management</a>
+                </li>
+                <li class="active">
+                    <a href="contentAdd.html">Add Content</a>
+                </li>
+            </ul>
+            <form action="#">
+                <div class="form-group mar_top15" style="margin-top: 15px;">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <textarea name="" id="content" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox">sticky thread
+                    </label>
+                    <button type="submit" class="btn btn-default pull-right">REALEASE</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md 12">
+                <p>Copyright is here</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

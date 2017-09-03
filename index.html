@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>bootstrap demo project</title>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!--container : define the width-->
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">Demo Admin</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li>
+                <li><a href="userList.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; User Manage</a></li>
+                <li><a href="contentManage.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp; Content Manage</a></li>
+                <li><a href="tagManage.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp; Tag Manage</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;Front Home</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Personal HomePage</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;Personal Customize</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;Account Center</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;My favourite</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;Log out</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+
+<div class="container">
+    <div class="row">
+        <!--alert-->
+        <div class="col-md-12">
+            <div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4>Oh snap! You got an error!</h4> <p>Please update the system immediately.</p>
+                <p>
+                    <button type="button" class="btn btn-danger">Update</button>
+                    <button type="button" class="btn btn-default" data-dismiss="alert">Later</button>
+                </p>
+            </div>
+        </div>
+        <!--tables-->
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Data Statistic</div>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Yesterday</th>
+                                <th>Today</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Member Sign Up</th>
+                                <td>52</td>
+                                <td>62</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Member Logged in</th>
+                                <td>98</td>
+                                <td>112</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">New Threads</th>
+                                <td>22</td>
+                                <td>64</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Yesterday Threads</th>
+                                <td>33</td>
+                                <td>61</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Threads</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="http://www.google.com"><span class="glyphicon glyphicon-list-alt"></span> thread 1 <small class="pull-right">2015/08/08</small></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="http://www.google.com"><span class="glyphicon glyphicon-list-alt"></span> thread 2 <small class="pull-right">2015/08/08</small></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="http://www.google.com"><span class="glyphicon glyphicon-list-alt"></span> thread 3 <small class="pull-right">2015/08/08</small></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="http://www.google.com"><span class="glyphicon glyphicon-list-alt"></span> thread 4 <small class="pull-right">2015/08/08</small></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="http://www.google.com"><span class="glyphicon glyphicon-list-alt"></span> thread 5 <small class="pull-right">2015/08/08</small></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="http://www.google.com"><span class="glyphicon glyphicon-list-alt"></span> thread 5 <small class="pull-right">2015/08/08</small></a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <!--graph-->
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Today's visitors</div>
+                <div class="panel-body">
+                    <canvas id="canvas" class="col-md-12"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Server Status</div>
+                <div class="panel-body">
+                    <p>Memory Usage : 40%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <span class="sr-only">40% Complete</span>
+                        </div>
+                    </div>
+                    <p>Database Usage : 20%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <span class="sr-only">20% Complete</span>
+                        </div>
+                    </div>
+                    <p>Disk Usage : 20%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                    </div>
+                    <p>CPU Usage : 80%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Message Board
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-7">
+                        <div class="media well">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object wh64" src="./images/a.png" alt="Mr Boss">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Mr Boss</h4>
+                                <p>What's wrong with our official website? Fixed it right now! </p>
+                            </div>
+                        </div>
+                        <div class="media well">
+                            <div class="media-left pull-right">
+                                <a href="#">
+                                    <img class="media-object wh64" src="./images/b.png" alt="Mr Boss">
+                                </a>
+                            </div>
+                            <div class="media-body text-right">
+                                <h4 class="media-heading">Front end developer</h4>
+                                <p>Yes, my lord.</p>
+                            </div>
+                        </div>
+                        <div class="media well">
+                            <div class="media-left pull-right">
+                                <a href="#">
+                                    <img class="media-object wh64" src="./images/b.png" alt="Mr Boss">
+                                </a>
+                            </div>
+                            <div class="media-body text-right">
+                                <h4 class="media-heading">Front end developer</h4>
+                                <p>Do I have to fix the bugs before tomorrow</p>
+                            </div>
+                        </div>
+                        <div class="media well">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object wh64" src="./images/a.png" alt="Mr Boss">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Mr Boss</h4>
+                                <p>Of course, :)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <form action="#">
+                            <div class="fomr-group">
+                                <label for="text1">Please type your message here</label>
+                                <textarea style="resize: none; " class="form-control" name="" id="text1" cols="10" rows="5" placeholder="please input your message here">
+                                </textarea>
+                                <button  type="submit" class="btn btn-default leave">Send</button>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Team Contact List</div>
+                                <div class="panel-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <span class="glyphicon glyphicon-phone-alt"></span>
+                                            Jeff:0411875701
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="glyphicon glyphicon-phone-alt"></span>
+                                            Jeff:0411875701
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="glyphicon glyphicon-phone-alt"></span>
+                                            Jeff:0411875701
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="glyphicon glyphicon-phone"></span>
+                                            Jeff:0411875701
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md 12">
+                <p>Copyright is here</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/script.js"></script>
+<script>
+    var a = 1;
+    a.a = 2;
+    console.log(a.a);
+</script>
+</body>
+</html>
